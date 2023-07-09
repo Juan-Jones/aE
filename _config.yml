@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: ''  #leave this alone
 url: "https://clinquant-fox-3377bb.netlify.app/"   #change this to yours
-repository: juan-jones/emo
+repository: juan-jones/aE
 # twitter_username: moneyonline_fre  #change to your own twitter account
 lang: en_gb
 timezone: UTC
