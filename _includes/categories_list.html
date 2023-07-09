@@ -1,0 +1,23 @@
+{%- assign categories = include.categories | split:'|' | sort | uniq -%}
+
+{%- if categories.size > 0 -%}
+<footer>
+  <div class="category-list">
+    {%- if categories.size == 1 -%}
+      <div class="meta">category</div>
+    {%- else -%}
+      <div class="meta">categories</div>
+    {%- endif -%}
+
+    {%- for category in categories -%}
+    <a class="button" href="{{ "/categories" | relative_url }}#{{ category | cgi_escape }}">
+      <p><i class="fa fa-category fa-fw"></i> {{ category }}</p>
+    </a>
+    {%- endfor -%}
+  </div> 
+</footer>
+{%- else -%}
+<footer>
+  <div class="category-list"></div>
+</footer>
+{%- endif -%}
