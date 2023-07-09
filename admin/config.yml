@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: juan-jones/aE # Path to your GitHub repository
-  branch: master # Branch to update (master by default)
+  branch: aE # Branch to update (master by default)
   site_domain: earnonlinemoney.org #Your site on netlify
   use_graphql: true
 
